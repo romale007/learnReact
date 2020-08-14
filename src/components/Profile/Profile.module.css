@@ -1,0 +1,47 @@
+.content {
+  grid-area: c;
+  background-color:rgb(223, 151, 151);
+  padding: 10px;
+  
+
+}
+
+/* .content img {
+  height: 200px;
+} */
+
+.item {
+  color: brown;
+}
+
+.profileHeadPic{
+  background-color: white;
+  /* padding: 5px; */
+}
+
+.profileHeadPic img {
+  height: 150px;
+  width: 800px;
+  
+}
+
+.profileData {
+  display: flex;
+}
+
+.avaBlock {
+  background-color: white;
+}
+
+.avaBlock img {
+  height: 75px;
+  padding: 5px;
+}
+
+.userInfo {
+  background-color: wheat;
+}
+
+.active {
+  font-weight: bold;
+}

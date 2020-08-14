@@ -1,15 +1,14 @@
 import React from "react";
 import s from "./Navbar.module.css";
 
-console.log(s);
 
 const Navbar = () => {
   return (
     <nav className={s.nav}>
-      <div className={`${s.item} ${s.active}`}>
+      <div className={s.item}>
         <a>Profile</a>
       </div>
-      <div className={s.item}>
+      <div className = {s.item}>
         <a>Messages</a>
       </div>
       <div className={s.item}>
