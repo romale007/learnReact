@@ -4,7 +4,7 @@ import MyPosts from "./MyPosts/MyPosts.jsx";
 
 //console.log(s)
 
-const Profile = () => {
+const Profile = (props) => {
   return (
     <div className={s.content}>
       <div className={s.profileHeadPic}>
@@ -20,7 +20,7 @@ const Profile = () => {
             DOB
           </div>
           <div>
-            City
+            City: {props.city}
           </div>
           <div>
             Education

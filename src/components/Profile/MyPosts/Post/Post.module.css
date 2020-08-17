@@ -1,11 +1,32 @@
 
 .item {
   color: brown;
+  display: flex; 
+  
+ 
 }
 
 .item img {
   height: 50px;
   width: 50px;
   border-radius: 50px;
+  
 }
+
+.postTextBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.postMessage {
+ color: black;
+}
+
+.likes {
+  color: blueviolet;
+  align-self: flex-end;
+}
+
+
+
 

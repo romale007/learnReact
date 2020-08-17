@@ -1,14 +1,11 @@
 .content {
   grid-area: c;
-  background-color:rgb(223, 151, 151);
+  background-color:rgb(243, 194, 194);
   padding: 10px;
   
 
 }
 
-/* .content img {
-  height: 200px;
-} */
 
 .item {
   color: brown;
