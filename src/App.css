@@ -11,5 +11,12 @@
   grid-template-columns: 1fr 10fr;
   /* grid-gap: 10px; */
 
+}
+
+.app-wrapper-content {
+
+    grid-area: c;
+    background-color:rgb(243, 194, 194);
+    padding: 10px;
 
 }
