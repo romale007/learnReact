@@ -1,0 +1,26 @@
+
+
+.item {
+  color: brown;
+}
+
+.profileData {
+  display: flex;
+}
+
+.avaBlock {
+  background-color: white;
+}
+
+.avaBlock img {
+  height: 75px;
+  padding: 5px;
+}
+
+.userInfo {
+  background-color: wheat;
+}
+
+.active {
+  font-weight: bold;
+}

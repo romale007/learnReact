@@ -1,0 +1,11 @@
+
+.profileHeadPic{
+  background-color: white;
+  /* padding: 5px; */
+}
+
+.profileHeadPic img {
+  height: 150px;
+  width: 800px;
+  
+}
