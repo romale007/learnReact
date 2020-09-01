@@ -3,17 +3,15 @@ import s from "./MyPosts.module.css";
 import Post from "./Post/Post";
 
 
-let postsData = [
-  { id: '1', message: 'Hi, how are you?', likesCount: 1 },
-  { id: '2', message: 'It\'s my first post........!', likesCount: 3 },
-];
 
 
 
-const MyPosts = () => {
 
-  let postElements = postsData
-    .map(p => <Post message={p.message} {p.likesCount} />)
+                                                                        // Check the render method of `MyPosts`. See https://fb.me/react-warning-keys for more information.
+
+const MyPosts = (props) => {
+  let postsElements =
+    props.postsData.map( p => <Post key={p.id.toString()} message={p.message} likesCount={p.likesCount} />);
 
   return (
     <div>
@@ -24,12 +22,7 @@ const MyPosts = () => {
         <button>Remove</button>
       </div>
       <div className={s.posts}>
-        {postElements}
-
-        {/* <Post message={postsData[0].message} likesCount={postsData[0].likesCount} />
-      <Post message={postsData[1].message} likesCount={postsData[1].likesCount} /> */}
-
-
+        {postsElements}
       </div>
     </div>
   );

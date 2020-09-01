@@ -9,8 +9,8 @@ import News from "./components/News/News";            //импорт компо�
 import Music from "./components/Music/Music";         //импорт компонентов
 import Settings from "./components/Settings/Settings";//импорт компонентов
 import { Route, BrowserRouter } from "react-router-dom";//импорт модуля роутинга для анализа пути в в строке браузера и вставки компонента нужного пути
-// C помощью компоненты <Route path="/dialogs" component = {Dialogs}/> 
-//   
+                                                          // C помощью компоненты <Route path="/dialogs" component = {Dialogs}/>
+
 
 // <BrowserRouter> // попадая в компоненту App.js мы устанавливаем, что всё приложение будет "под властью" модуля <BrowserRouter>
 //   <div className="app-wrapper"> // передаём класc app-wrapper для всего приложения из файла App.css (применяем грид тут)
@@ -30,18 +30,19 @@ import { Route, BrowserRouter } from "react-router-dom";//импорт моду�
 
 
 
-const App = () => {
+const App = (props) => {
   return (
     <BrowserRouter>
       <div className="app-wrapper">
         <Header />
         <Navbar />
         <div className="app-wrapper-content">
-          {/* <Profile city = 'NN' />  ???*/}
 
           {/* Роуты "слушают" изменения в адресной строке*/}
-          <Route exact path="/dialogs" component={Dialogs} />
-          <Route path="/profile" component={Profile} />
+
+          <Route exact path="/dialogs" render={() =>  <Dialogs dialogsData={props.dialogsData} messagesData={props.messagesData} />} />
+          <Route path="/profile" render={() => <Profile postsData={props.postsData} />} />
+
           <Route path="/news" component={News} />
           <Route path="/music" component={Music} />
           <Route path="/settings" component={Settings} />
