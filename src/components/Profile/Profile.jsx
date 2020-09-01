@@ -13,7 +13,7 @@ const Profile = (props) => {
         <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Mainz_Theodor-Heuss-Bruecke_blaue_Stunde_Panorama.jpg" />
       </div>
       <ProfileInfo />
-      <MyPosts postsData={props.postsData} />
+      <MyPosts postsData={props.state.postsData} />
     </div>
   );
 };

@@ -40,8 +40,10 @@ const App = (props) => {
 
           {/* Роуты "слушают" изменения в адресной строке*/}
 
-          <Route exact path="/dialogs" render={() =>  <Dialogs dialogsData={props.dialogsData} messagesData={props.messagesData} />} />
-          <Route path="/profile" render={() => <Profile postsData={props.postsData} />} />
+          <Route exact path="/dialogs"
+              render={() =>  <Dialogs state={props.state.dialogsPage}/>} />
+          <Route path="/profile"
+              render={() => <Profile state={props.state.profilePage} />} />
 
           <Route path="/news" component={News} />
           <Route path="/music" component={Music} />
